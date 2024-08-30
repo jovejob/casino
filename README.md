@@ -41,8 +41,6 @@ lts/fermium
 engine-strict=true
 ```
 
-The reason we are using v14 instead of v16 for Node is that later in the tutorial we will be deploying on Vercel which unfortunately still does not support Node 16. Perhaps by the time you read this tutorial it might. You can follow the progress [here](https://github.com/vercel/community/discussions/37).
-
 You can check your version of Node with `node --version` and make sure you are setting the correct one. A list of Node version codenames can be found [here](https://github.com/nodejs/Release/blob/main/CODENAMES.md)
 
 Note that the use of `engine-strict` didn't specifically say anything about `yarn`, we do that in `package.json`:
@@ -373,7 +371,7 @@ Note that Storybook is meant as a visual testing tool, we will be implementing o
 
 The best way to learn how to use Storybook is installing it and trying it out!
 
-We'll be using the webpack5 version to stay up to date with the latest version of webpack (I'm unsure why it is still not yet the default. Maybe it will be by the time you are using this tutorial).
+We'll be using the webpack5 version to stay up to date with the latest version of webpack (I'm unsure why it is still not yet the default).
 
 When Storybook installs it automatically detects a lot of things about your project, like how it is a React app, and other tools you are using. It should take care fo all that configuration itself.
 
