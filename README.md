@@ -209,10 +209,10 @@ npx husky add .husky/pre-commit "yarn lint"
 
 ## The above says that in order for our commit to succeed, the `yarn lint` script must first run and succeed. "Succeed" in this context means no errors. It will allow you to have warnings (remember in the ESLint config a setting of 1 is a warning and 2 is an error in case you want to adjust settings).
 
-Lastly we are going to add one more tool. We have been following a standard convention for all our commit messages so far, let's ensure that everyone on the team is following them as well (including ourselves!). We added a linter for our commit messages:
+We are following a standard convention for all our commit messages, let's ensure that everyone on the team is following them as well (including ourselves!). We added a linter for our commit messages:
 
 ```
-yarn add -D @commitlint/config-conventional @commitlint/cli
+@commitlint/config-conventional @commitlint/cli
 ```
 
 To configure it we will be using a set of standard defaults, but I like to include that list explicitly in a `commitlint.config.js` file since I sometimes forget what prefixes are available:
