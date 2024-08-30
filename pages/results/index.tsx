@@ -4,8 +4,6 @@ import { ReactChild, ReactFragment, ReactPortal } from 'react';
 import PrimaryLayout from '../../components/layouts/primary/PrimaryLayout';
 import SearchResult from '../../components/utility/search-result/SearchResult';
 import { ISearchData } from '../../lib/search/types';
-// import { IApiSearchResponseData } from '../api/search';
-// import { NextPageWithLayout } from '../page';
 
 interface ResultsPageProps {
   results: ISearchData[];
@@ -36,24 +34,6 @@ const Results = ({ results }: ResultsPageProps) => {
   );
 };
 
-// export const getServerSideProps: GetServerSideProps = async (context) => {
-//   const { query } = context;
-//   const searchTerm = query.searchTerm || '';
-//   const category = query.category || '';
-
-//   const res = await fetch(
-//     `http://localhost:3001/api/search?searchTerm=${encodeURIComponent(
-//       searchTerm
-//     )}&category=${encodeURIComponent(category)}`
-//   );
-//   const results = await res.json();
-
-//   return {
-//     props: {
-//       results,
-//     },
-//   };
-// };
 export const getServerSideProps: GetServerSideProps = async (context) => {
   const { query } = context;
 
