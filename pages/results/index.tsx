@@ -66,7 +66,7 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
     : query.category || '';
 
   const res = await fetch(
-    `http://localhost:3001/api/search?searchTerm=${encodeURIComponent(
+    `http://localhost:3000/api/search?searchTerm=${encodeURIComponent(
       searchTerm
     )}&category=${encodeURIComponent(category)}`
   );
